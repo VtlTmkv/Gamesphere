@@ -12,6 +12,6 @@
         <module name="Gamesphere1.Controller.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>
