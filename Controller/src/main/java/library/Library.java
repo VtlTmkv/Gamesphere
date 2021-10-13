@@ -2,18 +2,17 @@ package library;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-
 public  class Library {
-    private static ArrayList Books=new ArrayList();
 
-    public Library(@NotNull Book[] book){
-        for(int i=0;i<book.length;i++)
-        Books.add(book);
+    private static Book [] books = new Book[5];
+
+    public Library(@NotNull Book[] book) {
+        for (int i = 0; i < book.length; i++) {
+            books[i] = book[i];
+        }
     }
-
-    public ArrayList getLibrary(){
-        return Books;
+    public Book[] getLibrary(){
+        return this.books;
     }
 
 }

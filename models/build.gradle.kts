@@ -10,12 +10,12 @@ repositories {
 }
 
 dependencies {
+    compileOnly ("org.jetbrains:annotations:16.0.2")
     implementation ("com.google.code.gson:gson:2.8.5")
     implementation("org.projectlombok:lombok:1.18.20")
-//    implementation("com.intellij:annotations:12.0.")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-
+    annotationProcessor("org.projectlombok:lombok:1.18.20")
 }
 
 tasks.getByName<Test>("test") {
